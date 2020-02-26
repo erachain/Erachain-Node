@@ -108,33 +108,33 @@ Example:
 **Transaction types:**
 
     // ISSUE ITEMS
-    public static final int ISSUE_ASSET_TRANSACTION = 21;
-    public static final int ISSUE_IMPRINT_TRANSACTION = 22;
-    public static final int ISSUE_TEMPLATE_TRANSACTION = 23;
-    public static final int ISSUE_PERSON_TRANSACTION = 24;
-    public static final int ISSUE_STATUS_TRANSACTION = 25;
-    public static final int ISSUE_UNION_TRANSACTION = 26;
-    public static final int ISSUE_STATEMENT_TRANSACTION = 27;
-    public static final int ISSUE_POLL_TRANSACTION = 28;
+    ISSUE_ASSET_TRANSACTION = 21;
+    ISSUE_IMPRINT_TRANSACTION = 22;
+    ISSUE_TEMPLATE_TRANSACTION = 23;
+    ISSUE_PERSON_TRANSACTION = 24;
+    ISSUE_STATUS_TRANSACTION = 25;
+    ISSUE_UNION_TRANSACTION = 26;
+    ISSUE_STATEMENT_TRANSACTION = 27;
+    ISSUE_POLL_TRANSACTION = 28;
     // SEND ASSET
-    public static final int SEND_ASSET_TRANSACTION = 31;
+    SEND_ASSET_TRANSACTION = 31;
     // OTHER
-    public static final int SIGN_NOTE_TRANSACTION = 35;
-    public static final int CERTIFY_PUB_KEYS_TRANSACTION = 36;
-    public static final int SET_STATUS_TO_ITEM_TRANSACTION = 37;
-    public static final int SET_UNION_TO_ITEM_TRANSACTION = 38;
-    public static final int SET_UNION_STATUS_TO_ITEM_TRANSACTION = 39;
+    SIGN_NOTE_TRANSACTION = 35;
+    CERTIFY_PUB_KEYS_TRANSACTION = 36;
+    SET_STATUS_TO_ITEM_TRANSACTION = 37;
+    SET_UNION_TO_ITEM_TRANSACTION = 38;
+    SET_UNION_STATUS_TO_ITEM_TRANSACTION = 39;
     // confirm other transactions
-    public static final int VOUCH_TRANSACTION = 40;
+    VOUCH_TRANSACTION = 40;
     // HASHES
-    public static final int HASHES_RECORD = 41;
+    HASHES_RECORD = 41;
     // exchange of assets
-    public static final int CREATE_ORDER_TRANSACTION = 50;
-    public static final int CANCEL_ORDER_TRANSACTION = 51;
+    CREATE_ORDER_TRANSACTION = 50;
+    CANCEL_ORDER_TRANSACTION = 51;
     // voting
-    public static final int CREATE_POLL_TRANSACTION = 61;
-    public static final int VOTE_ON_POLL_TRANSACTION = 62;
-    public static final int VOTE_ON_ITEM_POLL_TRANSACTION = 63;
-    public static final int RELEASE_PACK = 70;
+    CREATE_POLL_TRANSACTION = 61;
+    VOTE_ON_POLL_TRANSACTION = 62;
+    VOTE_ON_ITEM_POLL_TRANSACTION = 63;
+    RELEASE_PACK = 70;
 
-    public static final int CALCULATED_TRANSACTION = 100;
+    CALCULATED_TRANSACTION = 100;
