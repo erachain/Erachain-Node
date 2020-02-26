@@ -60,3 +60,46 @@ Copy bath-file to root folder and run it.
 Example for Windows:  
 start "erachain" java -jar erachain.jar -pass=1 -seed=3:AXRJwqktmgNYVnpR5uYwBh5v6K6kFb2XH1KYjwDroKcy:1
 
+# RPC script commands
+Set `ON` in Node Settings (File -> Settings -> Main) for RPC Server. Set Access Permission for local.
+Use console in Node GUI (Network Browse -> Console) or -cli mode or CURL or web-browser for send commands to RPC port.
+
+Type `help` in Console for help on RPC commands.
+
+> If GUI is ON than commands will rise prompt window for password.
+
+## Multi Send
+Multi send scrip for send asset for many addresses or persons filtered by some parameters.  
+
+In console type:
+`GET r_send/multisend/...`
+In web-browser type:
+`http://127.0.0.1:9048/r_send/multisend/...`
+
+**Parameters:**  
+
+
+     * @param fromAddress     my address in Wallet
+     * @param assetKey        asset Key that send
+     * @param forAssetKey     asset key of holders test
+     * @param amount          absolute amount to send
+     * @param onlyPerson      Default: false. Use only person accounts
+     * @param gender          Filter by gender. -1 = all, 0 - man, 1 - woman. Default: -1.
+     * @param position        test balance position. 1 - Own, 2 - Credit, 3 - Hold, 4 - Spend, 5 - Other
+     * @param greatEqual      test balance is great or equal
+     * @param selfPay         if set - pay to self address too. Default = true
+     * @param test            default - true. test=false - real send
+     * @param feePow
+     * @param activeAfterStr  timestamp after that is filter - yyyy-MM-dd hh:mm or timestamp(sec)
+     * @param activeBeforeStr timestamp before that is filter - yyyy-MM-dd hh:mm or timestamp(sec) activetypetx
+     * @param activeTypeTX    if set - test only that type transactions
+     * @param koeff           koefficient for amount in balance position of forAssetKey
+     * @param title
+     * @param password
+
+
+Example:
+  
+     * GET r_send/multisend/7LSN788zgesVYwvMhaUbaJ11oRGjWYagNA/1036/2?amount=0.001&title=probe-multi&onlyperson=true&activeafter=1577712486&password=123
+     * GET r_send/multisend/7LSN788zgesVYwvMhaUbaJ11oRGjWYagNA/1069/1036?amount=0.001&title=probe-multi&onlyperson=true&activeafter=2018-01-01 00:00&activebefore=2019-01-01 00:00&greatequal=0&activetypetx=24&password=1
+     * GET r_send/multisend/7A94JWgdnNPZtbmbphhpMQdseHpKCxbrZ1/1/2?amount=0.001&title=probe-multi&onlyperson=true&gender=0&password=1
