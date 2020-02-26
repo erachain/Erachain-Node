@@ -104,3 +104,37 @@ Example:
      * GET r_send/multisend/7LSN788zgesVYwvMhaUbaJ11oRGjWYagNA/1036/2?amount=0.001&title=probe-multi&onlyperson=true&activeafter=1577712486&password=123
      * GET r_send/multisend/7LSN788zgesVYwvMhaUbaJ11oRGjWYagNA/1069/1036?amount=0.001&title=probe-multi&onlyperson=true&activeafter=2018-01-01 00:00&activebefore=2019-01-01 00:00&greatequal=0&activetypetx=24&password=1
      * GET r_send/multisend/7A94JWgdnNPZtbmbphhpMQdseHpKCxbrZ1/1/2?amount=0.001&title=probe-multi&onlyperson=true&gender=0&password=1
+
+**Transaction types:**
+
+    // ISSUE ITEMS
+    public static final int ISSUE_ASSET_TRANSACTION = 21;
+    public static final int ISSUE_IMPRINT_TRANSACTION = 22;
+    public static final int ISSUE_TEMPLATE_TRANSACTION = 23;
+    public static final int ISSUE_PERSON_TRANSACTION = 24;
+    public static final int ISSUE_STATUS_TRANSACTION = 25;
+    public static final int ISSUE_UNION_TRANSACTION = 26;
+    public static final int ISSUE_STATEMENT_TRANSACTION = 27;
+    public static final int ISSUE_POLL_TRANSACTION = 28;
+    // SEND ASSET
+    public static final int SEND_ASSET_TRANSACTION = 31;
+    // OTHER
+    public static final int SIGN_NOTE_TRANSACTION = 35;
+    public static final int CERTIFY_PUB_KEYS_TRANSACTION = 36;
+    public static final int SET_STATUS_TO_ITEM_TRANSACTION = 37;
+    public static final int SET_UNION_TO_ITEM_TRANSACTION = 38;
+    public static final int SET_UNION_STATUS_TO_ITEM_TRANSACTION = 39;
+    // confirm other transactions
+    public static final int VOUCH_TRANSACTION = 40;
+    // HASHES
+    public static final int HASHES_RECORD = 41;
+    // exchange of assets
+    public static final int CREATE_ORDER_TRANSACTION = 50;
+    public static final int CANCEL_ORDER_TRANSACTION = 51;
+    // voting
+    public static final int CREATE_POLL_TRANSACTION = 61;
+    public static final int VOTE_ON_POLL_TRANSACTION = 62;
+    public static final int VOTE_ON_ITEM_POLL_TRANSACTION = 63;
+    public static final int RELEASE_PACK = 70;
+
+    public static final int CALCULATED_TRANSACTION = 100;
