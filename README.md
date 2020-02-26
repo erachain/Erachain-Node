@@ -69,7 +69,8 @@ Type `help` in Console for help on RPC commands.
 > If GUI is ON than commands will rise prompt window for password.
 
 ## Multi Send
-Multi send scrip for send asset for many addresses or persons filtered by some parameters.  
+Multi send scrip for send asset for many addresses or persons filtered by some parameters.
+This command will run as test for calculate FEE and total AMOUNT by default. For run real send set parameter `test=false`.  
 
 In console type:
 `GET r_send/multisend/...`
