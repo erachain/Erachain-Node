@@ -1,3 +1,4 @@
+
 # Start Node documentation
 
 ## Java
@@ -51,7 +52,10 @@ Not store calculated transactions in DB. Make speed up
 **-dbschain=rocksdb | mapdb | fast**  
 Select DataBase for dataChain. rocksdb - RocksDB or mapdb - MapDB or fast - it si complex DB for fast speed (default).
 Default: `mapdb`. `fast` and `rocksdb` is experimental now.
-	
+
+### runARGS
+Use file `runARGS.txt` for get command line arguments for simle run Erachain.
+
 ## Bath files
 Examples for batch (command) files for start with forging and loop restart see in `\z_bath_examples`
 
