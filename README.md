@@ -54,7 +54,7 @@ Select DataBase for dataChain. rocksdb - RocksDB or mapdb - MapDB or fast - it s
 Default: `mapdb`. `fast` and `rocksdb` is experimental now.
 
 ### runARGS
-Use file `runARGS.txt` for get command line arguments for simle run Erachain.
+Use file `runARGS.txt` for get command line arguments for simple run Erachain.
 
 > Parameters from `runARGS.txt` file have a lower priority over run arguments from command line
 
