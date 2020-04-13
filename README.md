@@ -56,6 +56,8 @@ Default: `mapdb`. `fast` and `rocksdb` is experimental now.
 ### runARGS
 Use file `runARGS.txt` for get command line arguments for simle run Erachain.
 
+> Parameters from `runARGS.txt` file have a lower priority over run arguments from command line
+
 ## Bath files
 Examples for batch (command) files for start with forging and loop restart see in `\z_bath_examples`
 
