@@ -6,7 +6,7 @@
 Use Java 1.8 64 JRE or SDK from https://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk
 
 ## Start Options
-see \z_bath_examples\readme.txt
+see \z_START_EXAMPLES\readme.txt
 
 **-nonet**  
 No use Network
