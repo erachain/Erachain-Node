@@ -78,6 +78,7 @@ Type `help` in Console for help on RPC commands.
 ## Multi Send
 Multi send scrip for send asset for many addresses or persons filtered by some parameters.
 This command will run as test for calculate FEE and total AMOUNT by default. For run real send set parameter `test=false`.  
+r_send/multisend/{fromAddress}/{assetKey}/{forAssetKey}?position=1&amount=0&test=true&feePow=0&activeafter=[date]&activebefore=[date]&greatequal=[amount]&koeff=1&title=&onlyperson=false&selfpay=false&password=
 
 In console type:
 `GET r_send/multisend/...`
