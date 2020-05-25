@@ -92,16 +92,16 @@ In web-browser type:
      * @param assetKey        asset Key that send
      * @param forAssetKey     asset key of holders test
      * @param amount          absolute amount to send
-     * @param onlyPerson      Default: false. Use only person accounts
+     * @param onlyperson      Default: false. Use only person accounts
      * @param gender          Filter by gender. -1 = all, 0 - man, 1 - woman. Default: -1.
      * @param position        test balance position. 1 - Own, 2 - Credit, 3 - Hold, 4 - Spend, 5 - Other
-     * @param greatEqual      test balance is great or equal
-     * @param selfPay         if set - pay to self address too. Default = true
+     * @param greatequal      test balance is great or equal
+     * @param selfpay         if set - pay to self address too. Default = true
      * @param test            default - true. test=false - real send
      * @param feePow
-     * @param activeAfterStr  timestamp after that is filter - yyyy-MM-dd hh:mm or timestamp(sec)
-     * @param activeBeforeStr timestamp before that is filter - yyyy-MM-dd hh:mm or timestamp(sec) activetypetx
-     * @param activeTypeTX    if set - test only that type transactions
+     * @param activeafterStr  timestamp after that is filter - yyyy-MM-dd hh:mm or timestamp(sec)
+     * @param activebeforeStr timestamp before that is filter - yyyy-MM-dd hh:mm or timestamp(sec) activetypetx
+     * @param activetypetx    if set - test only that type transactions
      * @param koeff           koefficient for amount in balance position of forAssetKey
      * @param title
      * @param password
